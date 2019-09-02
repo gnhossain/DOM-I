@@ -40,3 +40,25 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//My code start here
+let navItems = document.querySelectorAll('nav a');
+navItems.forEach((item, i=1) => {
+ item.textContent = siteContent.nav[`nav-item-${i}`];
+})
+
+//Task 3:
+ navItems.forEach((item) => item.style.color = 'green');
+
+let home = document.createElement("a");
+home.textContent = "Home";
+home.style.color = "green";
+
+let contact = document.createElement("a");
+contact.textContent = "Contact";
+contact.style.color = "green";
+
+let nav = document.querySelector('nav')
+nav.prepend(home);
+nav.appendChild(contact);
+
