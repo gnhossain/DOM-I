@@ -95,4 +95,24 @@ midtext[3].textContent = siteContent["main-content"]["product-content"];
 midtext[4].textContent = siteContent["main-content"]["vision-content"];
 
 
+//Stretch
+midheadings.forEach((item)=> item.style.color = 'green');
+title.style.color = 'seagreen';
+
+
+contHead = document.querySelector(".contact h4");
+contText = document.querySelectorAll(".contact p");
+
+contHead.textContent = siteContent.contact["contact-h4"];
+
+contText[0].textContent = siteContent.contact.address;
+contText[1].textContent = siteContent.contact.phone;
+contText[2].textContent = siteContent.contact.email;
+
+contHead.style.color = 'green';
+
+//Footer
+document.querySelector("footer p").textContent = siteContent.footer.copyright;
+
+
 
