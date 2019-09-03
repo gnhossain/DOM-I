@@ -114,5 +114,8 @@ contHead.style.color = 'green';
 //Footer
 document.querySelector("footer p").textContent = siteContent.footer.copyright;
 
+let footer = document.querySelector('footer p');
+footer.addEventListener('click', (e) => e.target.style.background = 'red');
+
 
 
